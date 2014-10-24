@@ -15,6 +15,7 @@
 //*************DEFINE****************//
 //***********************************//
 #define TAG_TRACK_BOMB_CSGO 				"[AIO TRACK BOMB] - "
+#define PLUGIN_VERSION_TRACK_BOMB_CSGO		"1.0.0"
 #define MAX_MAP_TRACK_BOMB_CSGO				2
 #define MAX_DIRECTION_TRACK_BOMB_CSGO		2 * MAX_MAP_TRACK_BOMB_CSGO	
 #define MAX_WAY_TRACK_BOMB_CSGO				4 //* MAX_DIRECTION_TRACK_BOMB_CSGO * MAX_MAP_TRACK_BOMB_CSGO
@@ -110,7 +111,7 @@ new M_HALO01_PRECACHED;
 public OnPluginStartTrackBombCsgo()
 {
 	LoadLocationsBombCsgo();
-	CreateConVar("aio_track_bomb_version", PLUGIN_VERSION, "Version", CVARS);
+	CreateConVar("aio_track_bomb_version", PLUGIN_VERSION_TRACK_BOMB_CSGO, "Version", CVARS);
 	
 	cvar_active_track_bomb_csgo 					= CreateConVar("active_track_bomb_csgo",  					"0", 					"Enable/Disable Track the bomb", 			DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
 	cvar_active_track_bomb_csgo_dev					= CreateConVar("active_track_bomb_csgo_dev", 				"0", 					"Enable/Disable Track the bomb Dev Mod", 	DEFAULT_FLAGS, 		true, 0.0, 		true, 1.0);
